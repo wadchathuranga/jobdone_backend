@@ -8,22 +8,22 @@ namespace jobdone_backend.Controllers
     [ApiController]
     public class JobController : ControllerBase
     {
-        [HttpPost(Name = "SaveCompletedJob")]
-        public IEnumerable<Any> SaveCompletedJob()
+        [HttpPost("SaveCompletedJob")]
+        public IActionResult SaveCompletedJob()
         {
-            return [];
+            return Ok(new JsonResult(new { message = "SaveCompletedJob API is working..." }));
         }
 
         [HttpGet(Name = "GetAllJobs")]
-        public IEnumerable<Any> GetAllJobs()
+        public IActionResult GetAllJobs()
         {
-            return [];
+            return Ok(new JsonResult(new { message = "GetAllJobs API is working..." }));
         }
 
         [HttpGet(Name = "GetAllJobsWithFilter")]
-        public IEnumerable<Any> GetAllJobsWithFilter()
+        public IActionResult GetAllJobsWithFilter()
         {
-            return [];
+            return Ok(new JsonResult(new { message = "GetAllJobsWithFilter API is working..." }));
         }
     }
 }
