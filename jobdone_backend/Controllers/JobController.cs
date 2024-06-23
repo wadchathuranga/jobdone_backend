@@ -37,13 +37,13 @@ namespace jobdone_backend.Controllers
             return Ok(response);
         }
 
-        [HttpGet("GetAllJobs")]
+        [HttpGet("GetAllCompletedJob")]
         public IActionResult GetAllJobs()
         {
             return Ok(new JsonResult(new { message = "GetAllJobs API is working..." }));
         }
 
-        [HttpGet("GetAllJobsWithFilter")]
+        [HttpGet("GetCompletedJobsWithFilter")]
         public IActionResult GetAllJobsWithFilter()
         {
             return Ok(new JsonResult(new { message = "GetAllJobsWithFilter API is working..." }));
